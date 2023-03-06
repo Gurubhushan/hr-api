@@ -9,7 +9,9 @@ pipeline {
     parameters {
       string defaultValue: 'main', description: 'Chose branch to build and deploy', name: 'branchName'
     }
-
+    parameters {
+  string defaultValue: 'Main', description: 'choose branch to build and deploy', name: 'BranchName'
+}
     stages {
         stage("Git Checkout"){
             when {
